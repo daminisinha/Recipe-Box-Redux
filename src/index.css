@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Master';
+  src: url('./master_of_comics/Master of Comics Back Personal Use.ttf') format('truetype');
+  font-stretch:ultra-expanded;
+  font-weight:100;
+  
+}
+@font-face {
+  font-family: 'Fantastic';
+  src: url('./Fantastic/Fantastic Reason Personal Use.ttf') format('truetype');
+  font-stretch:ultra-expanded;
+  font-weight:200;
+  
+}
+body {
+
+  margin: 0;
+  padding: 0;
+  
+}
+.sideNav{
+
+ padding:4px;
+
+}
+.sideNav>.nav{
+  box-shadow: 10px 10px grey;
+  float: left;
+  width:20%;
+  height:630px;
+  background-color: #dfdfdf;
+}
+.sideLabel{
+
+  font-family: 'Master';
+  height:136px;
+ width:100%;
+  background-color: aqua;
+ color:black;
+  font-size:34px;
+ 
+  
+}
+.sideLabel>span>i{
+  font-size: 45px;
+  padding: 2px;
+
+}
+.sideNav>.nav>.nav-item{
+  padding-bottom: 15px;
+}
+.sideNav>.nav>.nav-item>button{
+  width:98%;
+  
+}
+.listRecipes{
+  font-family: 'Master';
+  font-size:30px;
+  padding-top:50px;
+
+}
+.mainBody{
+font-family: 'Fantastic';
+ text-align:center;
+ padding-top:50px;
+ color:#
+}
+.mainBody>h2{
+  padding-top:50px;
+}
+.mainBody>h3{
+  padding-top:50px;
+}
+
+
