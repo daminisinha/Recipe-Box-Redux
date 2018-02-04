@@ -7,6 +7,7 @@ export default class LeftNav extends React.Component{
     constructor(props){
         super(props);
         this.addRecipeHandler= this.addRecipeHandler.bind(this);
+        this.leftNavButtonClick = this.leftNavButtonClick(this);
     }
     componentWillMount(){
         this.state = {toAdd:null};
@@ -15,6 +16,9 @@ export default class LeftNav extends React.Component{
         this.setState({toAdd:true});
         <ToAddRecipe toAdd={this.state.toAdd}/>
         console.log("the value "+this.state.toAdd);
+    }
+    leftNavButtonClick(e){
+        this.props.changeMainBodyChildren(e.target.value);
     }
     render(){
         return(
@@ -28,7 +32,7 @@ export default class LeftNav extends React.Component{
                 </label>
                 </NavItem>
                 <NavItem>
-            <Button outline color="primary" size="lg" className="leftButtons" onClick = {this.addRecipeHandler}>Add Recipe</Button>{''}
+            <Button outline color="primary" size="lg" className="leftButtons" value="isAddRecipe" onClick = {this.leftNavButtonClick}>Add Recipe</Button>{''}
             </NavItem>
             <NavItem>
             <Button outline color="success" size="lg">Show All Recipes</Button>{''}
