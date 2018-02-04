@@ -2,13 +2,15 @@ import React from 'react';
 
 export default class MainBody extends React.Component{
     render(){
-        // if (!this.state.toAdd){
-        //     document.getElementsByClassName('mainBody').show();
-        //     document.getElementsByClassName('mainAddBody').hide();
-        // }else{
-        //     document.getElementsByClassName('mainAddBody').show();
-        //     document.getElementsByClassName('mainBody').hide();
-        // }
+         var componentToShow = null;
+         var viewState = this.props.viewState;
+         if(viewState.isAddRecipe){
+            componentToShow = // render your component here eg. <AddRecipe />
+         }
+         else if(viewState.isRemoveRecipe){
+            componentToShow = // render remove recipe.
+         }
+         //similarly for third condition or other conditions.
         return(
             <div>
          
@@ -22,6 +24,8 @@ export default class MainBody extends React.Component{
                 {/* <div className="mainAddBody">
                 <h2>Hi from add Recipe</h2>
                 </div> */}
+            
+                {componentToShow}
                 
             </div>
         )
